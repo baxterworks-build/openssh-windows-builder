@@ -1,0 +1,11 @@
+image: Visual Studio 2019
+
+configuration: Release
+platform: x64
+
+before_build:
+  - .\before_build.ps1
+
+build:
+  parallel: true
+  project: openssh-portable\contrib\win32\openssh\Win32-OpenSSH.sln
